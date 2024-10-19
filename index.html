@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Калькулятор стоимости заказа</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header_in">
+					<nav class="name">
+						<a href="#calc" class="nav_link">CALCULATOR</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="calculator" id="calc">
+				<div class="col">
+					<label for="kol">Количество товара: </label>
+					<input type="number" id="kol" name="kol" min="1" required value="1" />
+				</div>
+				<div class="col" id="prodPrice">
+					<label>Выбор товара: </label>
+					<div class="Phone">
+						<input type="radio" id="tov1" name="tovarrr" value="0" />
+						<label for="tov1">Xiaomi - 80000.</label>
+					</div>
+					<div class="Phone">
+						<input type="radio" id="tov2" name="tovarrr" value="1" />
+						<label for="tov2">Iphone 16 - 126000.</label>
+					</div>
+					<div class="Phone">
+						<input type="radio" id="tov3" name="tovarrr" value="2" />
+						<label for="tov3">Samsung s24 - 117000.</label>
+					</div>
+					<div class="Phone">
+						<input type="radio" id="tov4" name="tovarrr" value="3" />
+						<label for="tov4">Asus ROG Phone 8 - 110000.</label>
+					</div>
+				</div>
+
+				<div class="option_tov" id="selectt" style="display: none">
+					<label>Опции товара:</label>
+					<select name="pit">
+						<option value="option1">Plus - 30000.</option>
+						<option value="option2">Pro - 40000.</option>
+						<option value="option3">Pro Max - 50000.</option>
+					</select>
+				</div>
+				<div class="properties" id="checkboxes" style="display: none">
+					<label>Свойства товара:</label>
+					<div class="sv">
+						<input type="checkbox" id="Plus" name="prop1" value="plus" />
+						<label>Plus</label>
+					</div>
+					<div class="Ultra">
+						<input type="checkbox" id="Ultra" name="prop2" value="ultra" />
+						<label>Ultra</label>
+					</div>
+				</div>
+
+				<button class="btn" id="btn">Рассчитать стоимость</button>
+				<div class="result" id="result"></div>
+			</div>
+		</main>
+		<script src="calc.js"></script>
+	</body>
+</html>
